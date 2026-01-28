@@ -39,12 +39,26 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
 body {
+  margin: 0;
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 ul {
@@ -55,8 +69,27 @@ address {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Button */
 .button {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   background: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
@@ -85,8 +118,13 @@ address {
   font-weight: 600;
 }
 
-/* Hero title */
+/* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   font-weight: 900;
   font-size: 128px;
@@ -119,7 +157,15 @@ address {
   color: var(--color-brand--dark);
 }
 
-/* Traditions text */
+/* Traditions section */
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.traditions-section {
+  padding-top: 96px;
+}
+
 .traditions-text .accent {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -131,6 +177,11 @@ address {
 
 /* Chefs card */
 .chefs-title {
+  margin-bottom: 80px;
+}
+
+.chef-title {
+  margin-bottom: 16px;
   font-weight: 600;
   font-size: 40px;
 }
@@ -141,13 +192,22 @@ address {
   font-weight: 300;
   font-size: 14px;
 }
+.formats-title {
+  margin-bottom: 80px;
+}
+
 .format-title {
+  margin-bottom: 16px;
   color: var(--color-primary-light);
   font-weight: 600;
   font-size: 24px;
 }
 
-/* Order-call-text */
+/* Contacts section */
+.contacts-title {
+  margin-bottom: 16px;
+}
+
 .order-call-text {
   color: var(--color-brand-light);
 }
